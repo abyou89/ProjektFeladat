@@ -1,15 +1,19 @@
 package hu.younes;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Book extends Item {
+public class Book extends Item implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
     private Set<String> authors;
     private int publicationYear;
     private double price;
 
     public Book() {
-        super("Unknown Title");
+        super("Ismeretlen cim");
         this.authors = new HashSet<>();
         this.publicationYear = 0;
         this.price = 0.0;
@@ -48,7 +52,7 @@ public class Book extends Item {
 
     @Override
     public String getItemInfo() {
-        return super.getItemInfo() + ", Authors: " + authors + ", Year: " + publicationYear + ", Price: $" + price;
+        return super.getItemInfo() + ", Szerző: " + authors + ", Év: " + publicationYear + ", Ár: " + price + " Ft";
     }
 
     @Override
