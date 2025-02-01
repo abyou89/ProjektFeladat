@@ -1,0 +1,2 @@
+ID: 1, Title: cím, Szerző: [szerző 1], Év: 2024, Ár: 5000.0 Ft
+ID: 2, Title: cím 2, Szerző: [szerző 2], Év: 2023, Ár: 4000.0 Ft
